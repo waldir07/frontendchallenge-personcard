@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden ;
+}
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.top-bg {
+    position: absolute;
+    background-image: url('images/bg-pattern-top.svg');
+    width: 150%;
+    height: 150%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -320px;
+    left: -350px;
+    overflow: hidden;
+}
+
+.bottom-bg {
+    position: absolute;
+    background-image: url('images/bg-pattern-bottom.svg');
+    width: 150%;
+    height: 150%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 400px;
+    right: -360px;
+    overflow: hidden;
+}
+
+.container {
+    width: 340px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    z-index: 100;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container .top {
+    background-image: url('images/bg-pattern-card.svg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-radius:15px 15px  0 0 ;
+}
+.container .text{
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .text .img{
+    position: absolute;
+    background-image: url('images/image-victor.jpg');
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -55px;
+    left: 115px;
+    
+}
+.container .text h1{
+    font-size: 18px;
+    margin-top: 70px;
+    color: hsl(229, 23%, 23%);
+}
+
+.container .text span{
+    color: hsl(0, 0%, 59%);
+    padding-left: 5px;
+}
+
+.container .text h2{
+    font-size: 15px;
+    color :hsl(0, 0%, 59%);
+    font-weight: 400;
+    padding: 10px 0 25px 0; 
+    font-weight: 400;
+}
+
+.container .text .items-container{
+    display: flex;
+    width: 100%;
+    padding: 15px 30px;
+    gap: 10px;
+    justify-content: space-between;
+    box-shadow: 0 0 0.5px black;
+}
+.container .text .items-container .items{
+    text-align: center;
+    padding: 10px;
+}
+
+.container .text .items-container .items h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.container .text .items-container .items span{
+    font-size: 12px;
+    padding: 0;
+    letter-spacing: 2px;
+    color: hsl(227, 10%, 46%);
+}
+
+.attribution{
+    margin-top: 10px;
+}
+
+@media screen and (min-width:1440px) {
+    .top-bg {
+        position: absolute;
+        background-image: url('images/bg-pattern-top.svg');
+        width: 150%;
+        height: 150%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: -600px;
+        left: -370px;
+        overflow: hidden;
+    }
+    
+    .bottom-bg {
+        position: absolute;
+        background-image: url('images/bg-pattern-bottom.svg');
+        width: 150%;
+        height: 150%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 380px;
+        right: -1470px;
+        overflow: hidden;
+    }
+}
